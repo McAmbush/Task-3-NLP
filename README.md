@@ -93,9 +93,33 @@ Among the deep learning models, BERT performed the best with an f1-score of 97% 
 
 <img src="Data%20Exp%20Images/Approach2_val_result.png" width="600">
 
+### Best ML Model
+
 Among the machine learning models, Random Forest performed the best with an f1-score of 97% and macro average of 94% but, the model overfit on training set.
 
 <img src="Data%20Exp%20Images/Approach4_val_rf_result.png" width="600">
 
 ### Weights of models:
 https://drive.google.com/drive/folders/1DGD2DjOO0-ptIzbtM-DW_hb3LW0Q3vWD?usp=sharing
+
+
+## Conclusion
+
+The dataset provided has limited datapoints and many urls are outdated. Hence, our models have restriced performance.
+Among the deep learning models, BERT performed the best and the loss decayed in just 1 epoch.
+Among the machine learning models, random forest yielded higher accuracy than even BERT but, overfitted on training data, which would be an issue as the dataset size grows.
+
+## Future Scope
+1. Scrape more data
+2. Use Lemmatization or stemming
+3. Use Boosted models, like xgboost
+4. Use word embeddings like GLoVe
+5. Experiment with more complex transformers
+6. Optimize the hybrid model with more images per product
+
+## References
+1. F1 metrics in keras: https://datascience.stackexchange.com/questions/45165/how-to-get-accuracy-f1-precision-and-recall-for-a-keras-model
+2. Plotting ROC Curve: analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/
+3. BERT Tutorial: https://www.tensorflow.org/tutorials/text/classify_text_with_bert
+4. https://scikit-learn.org/stable/modules/model_evaluation.html
+5. https://machinelearningmastery.com/save-load-machine-learning-models-python-scikit-learn/
