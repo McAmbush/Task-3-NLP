@@ -52,6 +52,7 @@ It was observed that some products do not have a primary category. For such prod
 The duplicate categories were merged.
 A total of 22 unique categories were identified. 
 Null occurences were removed for descriptions (only 3 were present) and final dataframe was saved.
+Note - Alternate approach would have been to manually classify these categories under major categories but, according to flipkart category tree, all these products belonged to the "Home" category.
 
 <img src="Data%20Exp%20Images/Category_count.png" width="600">
 
