@@ -81,8 +81,21 @@ Overall word length distribution stated that the average description had 47 word
 ### Individual Word Length Plot
 <img src="Data%20Exp%20Images/Boxplot.png" width="600">
 
+## Model Training and Evaluation
 
+The 8 different models mentioned above were created and trained on the preprocessed data.
+For the ML models, TFIDF Vectorizer was used to convert input sentences to vectors.
+For the DL models, Tensorflow Tokenizer was used to vectorize the input sentences and the sequences were padding to a max length of 100.
 
+### Best DL Model
 
+Among the deep learning models, BERT performed the best with an f1-score of 97% and macro average of 88%.
 
+<img src="Data%20Exp%20Images/Approach2_val_result.png" width="600">
 
+Among the machine learning models, Random Forest performed the best with an f1-score of 97% and macro average of 94% but, the model overfit on training set.
+
+<img src="Data%20Exp%20Images/Approach4_val_rf_result.png" width="600">
+
+### Weights of models:
+https://drive.google.com/drive/folders/1DGD2DjOO0-ptIzbtM-DW_hb3LW0Q3vWD?usp=sharing
