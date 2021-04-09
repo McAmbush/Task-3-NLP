@@ -42,19 +42,47 @@ The following libraries were used for data exploration and model development –
 * Tensorflow: Deep Learning models
 * CV2, PIL: Image loading and processing
 * TQDM: Timeline View
-
+* Gensim: NLP Preprocessing
 
 # Approach
 
-##Data Cleaning
+## Data Cleaning
 
 It was observed that some products do not have a primary category. For such products, flipkart webste was scraped and category was obtained. If a category was still not found, the products were removed.
 The duplicate categories were merged.
-A total of 22 unique categories were identified.
-<img src="readme_images/praw%20dataset%20post%20count.png" width="800">
-
-**Body was the primary content missing even in the most popular posts** and subsequent post extractions, 
- hence it was removed as a training feature. 
+A total of 22 unique categories were identified. 
+Null occurences were removed for descriptions (only 3 were present) and final dataframe was saved.
 
 <img src="Data%20Exp%20Images/Category_count.png" width="600">
+
+#### For the descriptions, the following process was followed:
+1. Convert text to lower case
+2. Remove punctuations and numbers
+3. Remove stopwords
+4. Remove contractions
+5. Remove stray characters
+
+## Data Visualization
+
+The cleaned data was visualized to gain meaningful insights.
+Wordcloud visualization is as follows:
+
+<img src="Data%20Exp%20Images/Wordcloud.png" width="600">
+
+For all categories, most appearing words were plotted. For example, for the clothing category, [women,online,shirt] were most occuring words.
+
+<img src="Data%20Exp%20Images/Clothing_word_freq.png" width="600">
+
+Overall word length distribution stated that the average description had 47 words. For individual categories also, boxplot was plotted for the word distribution.
+
+### Overall Word Length Distribution
+<img src="Data%20Exp%20Images/Word_len_distribution.png" width="600">
+
+### Individual Word Length Plot
+<img src="Data%20Exp%20Images/Boxplot.png" width="600">
+
+
+
+
+
 
