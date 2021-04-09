@@ -56,5 +56,5 @@ A total of 22 unique categories were identified.
 **Body was the primary content missing even in the most popular posts** and subsequent post extractions, 
  hence it was removed as a training feature. 
 
-<img src="readme_images/post%20body%20heatmap.png" width="500">
+<img src="Data%20Exp%20Images/Category_count.png" width="600">
 
